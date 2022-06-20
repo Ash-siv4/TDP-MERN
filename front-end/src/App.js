@@ -1,11 +1,12 @@
 import "./App.css";
-import Heading from "./Heading";
+// import Heading from "./Heading";
 import Trainers from "./trainerApi/Trainers";
 
 function App() {
   return (
     <div className="App">
-      <Heading />
+      {/* <Heading /> */}
+
       <Trainers />
     </div>
   );
