@@ -1,13 +1,18 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
 const Schema = mongoose.Schema;
 
-mongoose.connect('mongodb://localhost:27017/TDP-DB', { useNewUrlParser: true }, (err) => {
-  if (err) return console.error(err);
-  return console.log('Connection successful');
-});
+mongoose.connect(
+  "mongodb://localhost:27017/TDP-DB",
+  { useNewUrlParser: true },
+  (err) => {
+    if (err) return console.error(err);
+    return console.log("Connection successful");
+  }
+);
 
 const trainerSchema = new Schema({
+  _id: Number, //replace custom id (which is an object containing a string) with own (number) - easier for doing updates/deletes
   name: {
     type: String,
     min: 2,
@@ -22,6 +27,6 @@ const trainerSchema = new Schema({
   specialism: String,
 });
 
-const Trainer = mongoose.model('trainer', trainerSchema);
+const Trainer = mongoose.model("trainer", trainerSchema);
 
 module.exports = Trainer;

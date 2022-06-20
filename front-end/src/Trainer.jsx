@@ -1,9 +1,10 @@
 import PropTypes from 'prop-types';
 // const props = { name, age, specialism};
-const Trainer = ({name, age, specialism}) => {
+const Trainer = ({id, name, age, specialism}) => {
     return (
         <div>
-            <h3>{name}</h3>
+            <h3>ID: {id}</h3>
+            <p>Name: {name}</p>
             <p>Age: {age}</p>
             <p>Specialism: {specialism}</p>
         </div>
