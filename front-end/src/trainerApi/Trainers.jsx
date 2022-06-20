@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import Trainer from "../Trainer";
-import AddNewTrainer from "./AddNewTrainer";
+import AddNewTrainer from "./AddUpdateTrainer";
 import DeleteTrainer from "./DeleteTrainer";
 
 const Trainers= () => {
