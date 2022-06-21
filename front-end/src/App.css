@@ -60,6 +60,13 @@
   background-color: #8b0303;
   color: white;
 }
+.button4 {
+  background-color: #f0a70b;
+}
+.button4:hover {
+  background-color: #8b5003;
+  color: white;
+}
 
 @keyframes App-logo-spin {
   from {

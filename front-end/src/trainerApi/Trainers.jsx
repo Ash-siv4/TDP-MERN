@@ -1,8 +1,9 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import Trainer from "../Trainer";
-import AddNewTrainer from "./AddUpdateTrainer";
+import AddNewTrainer from "./AddNewTrainer";
 import DeleteTrainer from "./DeleteTrainer";
+import ReadById from "./ReadById";
 
 const Trainers= () => {
 
@@ -28,6 +29,9 @@ const Trainers= () => {
         <br/>
         <h2>Remove an existing trainer: </h2>
         <DeleteTrainer getData={setFetchData} fetchData={fetchData}/>
+        <br/>
+        <h2>Read trainer by ID: </h2>
+        <ReadById getData={setFetchData} fetchData={fetchData}/>
         </>
      );
 }
