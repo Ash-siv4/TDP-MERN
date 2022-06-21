@@ -60,6 +60,8 @@ const AddNewTrainer =({getData, fetchData})=>{
         }
         
         return (
+            <>
+            <h2>Edit trainer list: </h2>
           <form >
             <h4>Insert values into the following boxes: </h4>
             <input type="number" min={0} placeholder="ID" value={id} onChange={(e)=>{setId(e.target.value)}}/>
@@ -76,6 +78,7 @@ const AddNewTrainer =({getData, fetchData})=>{
             <h4>UPDATE (to update an existing trainer)</h4>
             <button className="button button2" onClick={handleUpdate} >UPDATE</button>
           </form>
+          </>
         );
             
 }

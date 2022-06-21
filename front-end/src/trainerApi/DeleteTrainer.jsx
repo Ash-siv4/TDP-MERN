@@ -17,12 +17,16 @@ const DeleteTrainer = ({getData, fetchData}) => {
     }
 
     return (
+        <>
+        <br/>
+        <h2>Remove an existing trainer: </h2>
             <form >
                 <p>Delete record with ID: </p>
             <input type="number" min={0} placeholder="ID" value={id} onChange={(e)=>{setId(e.target.value)}}/>
             <br/>
             <button className="button button3" onClick={handleDelete} >Delete</button>
           </form>
+          </>
     );
 }
 

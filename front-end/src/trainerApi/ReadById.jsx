@@ -29,11 +29,15 @@ const ReadById= ({getData, fetchData}) => {
 
     return ( 
         <>
+        <br/>
+        <h2>Read trainer by ID: </h2>
+        <br/>
         <input type="number" min={0} placeholder="ID" value={id} onChange={(e)=>{setId(e.target.value)}}/>
         <br/>
         <button className="button button4" onClick={handleReadByID} >READ</button>
+        <br/>
         {
-            trainer.map= (<Trainer key={trainer._id} id={trainer._id} name={trainer.name} age={trainer.age} specialism={trainer.specialism}/>)
+            (<Trainer key={trainer._id} id={trainer._id} name={trainer.name} age={trainer.age} specialism={trainer.specialism}/>)
         }
         
         </>
