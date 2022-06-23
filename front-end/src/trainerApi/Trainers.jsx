@@ -25,8 +25,8 @@ const Trainers= () => {
         {
             trainers.map(trainer => <Trainer key={trainer._id} id={trainer._id} name={trainer.name} age={trainer.age} specialism={trainer.specialism}/>)
         }
-        <br/> */}
-        {/* <h2>Add new trainer: </h2>
+        <br/> 
+         <h2>Add new trainer: </h2>
         <AddNewTrainer getData={setFetchData} fetchData={fetchData}/>
         <br/>
         <h2>Remove an existing trainer: </h2>
@@ -40,7 +40,7 @@ const Trainers= () => {
             <Route exact path="/" element={trainers.map(trainer => <Trainer key={trainer._id} id={trainer._id} name={trainer.name} age={trainer.age} specialism={trainer.specialism}/>)}/>
             <Route path="/EditList" element={<AddNewTrainer getData={setFetchData} fetchData={fetchData}/>}/>
             <Route path="/DeleteTrainer" element={<DeleteTrainer getData={setFetchData} fetchData={fetchData}/>}/>
-            <Route path="/FindTriner" element={<ReadById getData={setFetchData} fetchData={fetchData}/>}/>
+            <Route path="/FindTrainer" element={<ReadById getData={setFetchData} fetchData={fetchData}/>}/>
         </Routes>
         </BrowserRouter>
 
