@@ -5,7 +5,7 @@ import AddNewTrainer from "./AddNewTrainer";
 import DeleteTrainer from "./DeleteTrainer";
 import ReadById from "./ReadById";
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
-import Nav from "./Nav";
+import Navi from "./Nav";
 
 const Trainers= () => {
 
@@ -35,7 +35,7 @@ const Trainers= () => {
         <h2>Read trainer by ID: </h2>
         <ReadById getData={setFetchData} fetchData={fetchData}/> */}
         <BrowserRouter>
-        <Nav/>
+        <Navi/>
         <Routes>
             <Route exact path="/" element={trainers.map(trainer => <Trainer key={trainer._id} id={trainer._id} name={trainer.name} age={trainer.age} specialism={trainer.specialism}/>)}/>
             <Route path="/EditList" element={<AddNewTrainer getData={setFetchData} fetchData={fetchData}/>}/>

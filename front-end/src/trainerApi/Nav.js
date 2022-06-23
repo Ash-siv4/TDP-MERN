@@ -11,10 +11,7 @@ const Navi = () => {
       <Link to="/DeleteTrainer">Delete a Trainer</Link>
       <br />
       <Link to="/FindTrainer">Find a Trainer</Link> */}
-      <Nav
-        defaultActiveKey="/"
-        onSelect={(selectedKey) => alert(`selected ${selectedKey}`)}
-      >
+      <Nav>
         <Nav.Item>
           <Nav.Link href="/">List of Trainers</Nav.Link>
         </Nav.Item>
